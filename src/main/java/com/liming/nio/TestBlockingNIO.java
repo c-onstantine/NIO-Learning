@@ -66,7 +66,7 @@ public class TestBlockingNIO {
         //1. 获取通道
         ServerSocketChannel ssChannel = ServerSocketChannel.open();
 
-        FileChannel outChannel = FileChannel.open(Paths.get("5.jpg"), StandardOpenOption.WRITE, StandardOpenOption.CREATE);
+        FileChannel outChannel = FileChannel.open(Paths.get("src/main/resources/5.jpg"), StandardOpenOption.WRITE, StandardOpenOption.CREATE);
 
         //2. 绑定连接
         ssChannel.bind(new InetSocketAddress(9898));
