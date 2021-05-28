@@ -77,7 +77,6 @@ public class TestBuffer {
 
         //判断缓冲区中是否还有剩余数据
         if(buf.hasRemaining()){
-
             //获取缓冲区中可以操作的数量
             System.out.println(buf.remaining());
         }
